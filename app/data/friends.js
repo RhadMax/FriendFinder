@@ -1,0 +1,3 @@
+friend = [];
+
+module.exports = friend;
