@@ -142,6 +142,22 @@ friend = [
             3,
             1
         ]
+    },
+    {
+        "name": "Average Joe",
+        "photo": "https://image.shutterstock.com/mosaic_250/1849259/575234476/stock-photo-good-looking-man-in-glasses-portrait-575234476.jpg",
+        "scores": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+        ]
     }
 ];
 
