@@ -20,9 +20,19 @@ module.exports = (app) => {
       }
       comparisons.push(differenceScore);
     };
-    console.log(comparisons)
-
-    // let match = { new: newFriend, match: bestMatch }
-    res.json(true);
+    // console.log(comparisons)
+    let bestMatch = 99;
+    let target;
+    for (let i = 0; i < comparisons.length; i++) {
+      if (comparisons[i] < bestMatch) {
+        bestMatch = comparisons[i];
+        target = i;
+      }
+    }
+    bestMatch = friends[target];
+    friends.push(newFriend)
+    // console.log(bestMatch);
+    let match = { new: newFriend, match: bestMatch }
+    res.json(match);
   });
 };
